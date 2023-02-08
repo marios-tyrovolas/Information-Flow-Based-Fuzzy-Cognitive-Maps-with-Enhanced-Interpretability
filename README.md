@@ -1,62 +1,79 @@
-# fcm_classifier_transformer
+# Data-driven Causal Discovery for Constructing Fuzzy Cognitive Maps: An Industrial Case Study
+[![View Private Cody Leaderboard on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/70197-private-cody-leaderboard)
 
-This repository contains source code to the article:
-[*Piotr Szwed: Classification and feature transformation with Fuzzy Cognitive Maps, Applied Soft Computing, Elsevier 2021*](https://arxiv.org/pdf/2103.05124.pdf)
-
-## Abstract
-Fuzzy Cognitive Maps (FCMs) are considered a soft computing technique combining elements of fuzzy logic and recurrent neural networks. They found multiple application in such domains as modeling of system behavior, prediction of time series, decision making and process control. Less attention, however, has
-been turned towards using them in pattern classification. In this work we propose an FCM based classifier with a fully connected map structure. In contrast
-to methods that expect reaching a steady system state during reasoning, we chose to execute a few FCM iterations (steps) before collecting output labels.
-Weights were learned with a gradient algorithm and logloss or cross-entropy were used as the cost function. Our primary goal was to verify, whether such
-design would result in a descent general purpose classifier, with performance comparable to off the shelf classical methods. As the preliminary results were
-promising, we investigated the hypothesis that the performance of d-step classifier can be attributed to a fact that in previous d − 1 steps it transforms the
-feature space by grouping observations belonging to a given class, so that they became more compact and separable. To verify this hypothesis we calculated
-three clustering scores for the transformed feature space. We also evaluated performance of pipelines built from FCM-based data transformer followed by a
-classification algorithm. The standard statistical analyzes confirmed both the performance of FCM based classifier and its capability to improve data. The
-supporting prototype software was implemented in Python using TensorFlow library.
-
-## Requirements
-The code was written in 2018 using TensorFlow 1.6 library, however recently it was ported to TF 2.6. 
-
-Current configuration:
-
-* Python 3.8.3
-* scikit-learn 0.24.2
-* scipy 1.5.0
-* numpy 1.19.3
-* Tensorflow 2.6.0
-
-## Code structure
-* ```base``` package comprises the code of FCM classifier, binary and multiclass classifiers are defined in ```binary_classifier.py``` and ```mc_classifier.py```
-* ```util``` package provides access to datasets used during experiments
-* ```use_cases.multiclass``` 
-  * ```cv_fcm_transformer.py``` - run this script. It implements [the pipeline in Fig. 7 pg. 20](https://arxiv.org/pdf/2103.05124.pdf) 
-  * ```gmm_classifier.py``` - implementation of a classifier based on a mixture of Gaussian distributions (used during experiments)
-  * ```fcm_best_params.py``` - a Bunch (dictionary) of parameters for particular datasets. These parameters were established manually, typically by random search
-
-## Execution
-
-After launching ```cv_fcm_transformer.py``` a file ```results_fcm_transformer.py``` is created in the folder ```use_cases/multiclass/results```. It comprises a giant multilevel dictionary gathering detailed results data. 
-
-The current version was tested on Windows 10 laptop equiped with 4GB GPU. The whole data processing took about 5 hours. However, the TF1.6 version was tested on Windows and VMware virtual Linux machine not using GPU. The VMware environment was more efficient.
-
-## Issues
-During an execution two waring messages frequently appear. 
-
-```W tensorflow/core/data/root_dataset.cc:167] Optimization loop failed: Cancelled: Operation was cancelled```
-
-```validation.py:70: FutureWarning: Pass labels=[0 1 2 3 4 5 6 7 8 9] as keyword args. From version 1.0 (renaming of 0.25) passing these as positional arguments will result in an error   warnings.warn(f"Pass {args_msg} as keyword args. From version ```
+[![Generic badge](https://img.shields.io/badge/Python-Powered-<COLOR>.svg)](https://www.python.org/)
 
 
-## Citation
-```
-@article{szwed2021classification,
-  title={Classification and feature transformation with Fuzzy Cognitive Maps},
-  author={Szwed, Piotr},
-  journal={Applied Soft Computing},
-  volume={105},
-  pages={107271},
-  year={2021},
-  publisher={Elsevier}
-}
-```
+## Table of Contents
+1. [General Info](#general-info)
+2. [Dataset](#dataset)
+3. [Scripts](#scripts)
+4. [Reference](#reference)
+
+### General Info
+***
+This repository contains the source code developed and used in the paper: *"Data-driven Causal Discovery for Constructing Fuzzy Cognitive Maps: An Industrial Case Study"* written by **Marios Tyrovolas**, **X. San Liang**, and **Chrysostomos Stylios**. 
+***
+
+## Dataset
+
+We adopted Matzka’s PMAI4I dataset to perform the experiments, a synthetic yet realistic dataset representing industrial predictive maintenance data.
+
+[S. Matzka, “Explainable artificial intelligence for predictive maintenance applications,” in *2020 Third International Conference on Artificial Intelligence for Industries (AI4I).* IEEE, Sep. 2020](https://ieeexplore.ieee.org/document/9253083)
+ 
+
+## Scripts
+
+A list of scripts used within the paper:
+
+II. THEORETICAL BACKGROUND
+
+* **Experiment for L-K IF Analysis on Binary Time Series**: 
+  1. *IF-based analysis Liang's experiment*
+
+III. PROPOSED METHODOLOGY
+
+* **Data pre-processing**: 
+  1. *Fuzzy Cognitive Maps in Classification AI4I Dataset.ipynb*
+  2. *k-fold cross validation datasets*
+  3. *GL_scale_normalization* 
+* **Training Phase 1 (L-K IF Analysis)**:
+  1. *IF_based_causality_analysis_ai4i2020* 
+  2. *taus.csv*
+* **Training Phase 2 (IF-FCM Learning Algorithm)**
+  1. [Global Optimization Toolbox](https://www.mathworks.com/products/global-optimization.html): Version R2021b
+  2. **PSO Algorithm**: *Particle_Swarm_Optimization_Napoles_Error_Function.m*
+  3. **Cost Function**: *Napoles_improved_error_function*
+  4. **Near-optimal solution for each fold**: *near_opt_sol_for_folds*
+* **What-if Simulations, Threshold moving, and evaluation metrics for IF-FCM's predictive power**
+  1. *Constructed_FCM_Simulations_for_Napoles_error_function.m*
+* **Global and Local Interpretability for IF-FCM**
+  1. *Global_Interpretability.m*
+  2. *Local_Interprtability.m*
+
+IV. COMPARATIVE ANALYSIS AGAINST OTHER ML AND FCM-BASED MODELS
+  
+   * Machine Learning Models
+     1. *Training and Evaluating other ML models_AI4I_2020_Final_version.ipynb*
+     2. *Global_Feat_Import_ML_mdl*
+  * FCM-based Models      
+    * [FCMB and FCMMC](https://github.com/pszwed-ai/fcm_classifier_transformer)
+      1. *Classification and feature transformation with Fuzzy Cognitive Maps - Piotr Szwed.ipynb*
+      2. *Hyper-parameter Tuning in FCMB and FCMMC.ipynb*
+    * [LTCN](https://github.com/gnapoles/ltcn-classifier)
+      1. *Long-Term Cognitive Network for Pattern Classification.ipynb*
+    * [FCN-FW](https://www.sciencedirect.com/science/article/pii/S1568494621003380)
+      1. *blah_blah.m*
+    * [FCM-SSF](https://sites.google.com/view/fcm-expert?pli=1)
+      1. *FCM_Expert_approach*
+    * [FCM-A](https://www.sciencedirect.com/science/article/pii/S0925231216315703)
+      1. *Froelich_approach*
+
+
+PS: A second possible solution for FCM training was also examined during this research. Specifically, the normalized IFs were used as the FCM weights but were subject to tuning according to their confidence intervals. For the completeness of the scripts, this code is also listed.
+1. *Particle_Swarm_Optimization_Option_2.m*
+2. *confidence_intervals_taus.mat*
+
+## Reference
+
+Tyrovolas, M., San Liang, X., & Stylios, C. (2023). Data-driven Causal Discovery for Constructing Fuzzy Cognitive Maps: An Industrial Case Study.
