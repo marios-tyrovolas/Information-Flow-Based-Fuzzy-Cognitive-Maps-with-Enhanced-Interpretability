@@ -1,4 +1,4 @@
-# Data-driven Causal Discovery for Constructing Fuzzy Cognitive Maps: An Industrial Case Study
+# A Novel Framework for Enhanced Interpretability in Fuzzy Cognitive Maps
 [![View Private Cody Leaderboard on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/70197-private-cody-leaderboard)
 
 [![Generic badge](https://img.shields.io/badge/Python-Powered-<COLOR>.svg)](https://www.python.org/)
@@ -12,7 +12,7 @@
 
 ### General Info
 ***
-This repository contains the source code developed and used in the paper: *"Data-driven Causal Discovery for Constructing Fuzzy Cognitive Maps: An Industrial Case Study"* written by **Marios Tyrovolas**, **X. San Liang**, and **Chrysostomos Stylios**. 
+This repository contains the source code developed and used in the paper: *"A Novel Framework for Enhanced Interpretability in Fuzzy Cognitive Maps"* written by **Marios Tyrovolas**, **X. San Liang**, and **Chrysostomos Stylios**. 
 ***
 
 ## Dataset
@@ -76,4 +76,4 @@ PS: A second possible solution for FCM training was also examined during this re
 
 ## Reference
 
-Tyrovolas, M., San Liang, X., & Stylios, C. (2023). Data-driven Causal Discovery for Constructing Fuzzy Cognitive Maps: An Industrial Case Study.
+Tyrovolas, M., San Liang, X., & Stylios, C. (2023). A Novel Framework for Enhanced Interpretability in Fuzzy Cognitive Maps.
