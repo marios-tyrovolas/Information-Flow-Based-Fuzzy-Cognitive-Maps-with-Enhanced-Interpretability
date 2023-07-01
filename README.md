@@ -1,5 +1,5 @@
 # A Novel Framework for Enhanced Interpretability in Fuzzy Cognitive Maps
-[![View Private Cody Leaderboard on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/products/matlab.html)[![Generic badge](https://img.shields.io/badge/Python-Powered-<COLOR>.svg)](https://www.python.org/)
+[![View Private Cody Leaderboard on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/products/matlab.html) [![Generic badge](https://img.shields.io/badge/Python-Powered-<COLOR>.svg)](https://www.python.org/)
 
 
 ## Table of Contents
