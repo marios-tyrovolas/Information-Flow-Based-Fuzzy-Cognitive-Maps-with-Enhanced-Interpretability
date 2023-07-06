@@ -5,7 +5,7 @@ warning('off');
 %% Read AI4I2020 Dataset
 
 %Original dataset
-ai4i2020 = readtable("G:\.shortcut-targets-by-id\1-wapAl6N5YrCs68c4NiFKyvybXTXmdgZ\Ph_D_Tyrovolas\Our Papers\3rd_Paper-Proposal\Testbed Codes\AI4I_Case_Study\raw_data\raw_ai4i2020_encoded.csv");
+ai4i2020 = readtable("..\dataset\raw_data\raw_ai4i2020_encoded.csv");
 ai4i2020 = ai4i2020(:,1:7);
 
 %Normalized dataset
@@ -165,7 +165,7 @@ end
 
 %% Save the matrix of normalized Ts and the corresponding confidence intervals
 
-filepath_for_tau_matrix = append("G:\.shortcut-targets-by-id\1-wapAl6N5YrCs68c4NiFKyvybXTXmdgZ\Ph_D_Tyrovolas\Our Papers\3rd_Paper-Proposal\Testbed Codes\AI4I_Case_Study\taus.csv");
+filepath_for_tau_matrix = append("..\experimental_setup\IFFCM\IF_FCM_Learning\taus.csv");
 writematrix(significant_taus,filepath_for_tau_matrix,'Delimiter',',')
 
-save 'G:\.shortcut-targets-by-id\1-wapAl6N5YrCs68c4NiFKyvybXTXmdgZ\Ph_D_Tyrovolas\Our Papers\3rd_Paper-Proposal\Testbed Codes\AI4I_Case_Study\confidence_intervals_taus.mat' confidence_intervals_for_significant_taus
+save '..\experimental_setup\IFFCM\IF_FCM_Learning\confidence_intervals_taus.mat' confidence_intervals_for_significant_taus
