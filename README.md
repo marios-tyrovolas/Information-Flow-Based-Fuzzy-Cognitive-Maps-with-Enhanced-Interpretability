@@ -81,8 +81,8 @@ Tyrovolas, M., San Liang, X., & Stylios, C. (2023). A Novel Framework for Enhanc
 For any question, please raise an issue or contact
 
 ```
-Zhenzhi Wang: zhenzhiwang@outlook.com
+Marios Tyrovolas: tirovolas@kic.uoi.gr
 ```
 ### Acknowledgement
 
-We appreciate [MS-TCN](https://github.com/yabufarha/ms-tcn) for extracted I3D feature, backbone network and evaluation code. 
+We acknowledge the support of this work by the project *"Dioni: Computing Infrastructure for Big-Data Processing and Analysis."* (**MIS No. 5047222**) which is implemented under the Action *"Reinforcement of the Research and Innovation Infrastructure"*, funded by the Operational Programme *"Competitiveness, Entrepreneurship and Innovation"* (**NSRF 2014-2020**) and cofinanced by Greece and the European Union (European Regional Development Fund).
