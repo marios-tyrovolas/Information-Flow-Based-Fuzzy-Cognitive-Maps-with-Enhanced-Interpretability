@@ -33,51 +33,47 @@ A list of scripts used within the paper:
 
 II. THEORETICAL BACKGROUND
 
-* [**Experiment for L-K IF Analysis on Binary Time Series**]((https://github.com/marios-tyrovolas/A-Novel-Framework-for-Enhanced-Interpretability-in-Fuzzy-Cognitive-Maps/tree/main/LK_IF_anal_binary_data_expr)): 
+* [**Experiment for L-K IF Analysis on Binary Time Series**](https://github.com/marios-tyrovolas/Information-Flow-Based-Fuzzy-Cognitive-Maps-with-Enhanced-Interpretability/tree/main/LK_IF_anal_binary_data_expr): 
   1. *LK_IF_anal_binary_data_expr*
 
 III. PROPOSED METHODOLOGY
 
-* **Data pre-processing**: 
+* [**Data pre-processing**](https://github.com/marios-tyrovolas/Information-Flow-Based-Fuzzy-Cognitive-Maps-with-Enhanced-Interpretability/tree/main/data_preprocessing): 
   1. *AI4I2020_data_preprocessing.ipynb*
-  2. *k-fold cross validation datasets*
-  3. *GL_scale_normalization* 
-* **Training Phase 1 (L-K IF Analysis)**:
+  2. *GL_scale_normalization* 
+* [**Training Phase 1 (L-K IF Analysis)**](https://github.com/marios-tyrovolas/Information-Flow-Based-Fuzzy-Cognitive-Maps-with-Enhanced-Interpretability/tree/main/IF_based_causality_analysis_ai4i2020):
   1. *IF_based_causality_analysis_ai4i2020* 
-  2. *taus.csv*
-* **Training Phase 2 (IF-FCM Learning Algorithm)**
-  1. [Global Optimization Toolbox](https://www.mathworks.com/products/global-optimization.html): Version R2021b
-  2. **PSO Algorithm**: *Particle_Swarm_Optimization_Napoles_Error_Function.m*
-  3. **Cost Function**: *Napoles_improved_error_function*
-  4. **Near-optimal solution for each fold**: *near_opt_sol_for_folds*
-* **What-if Simulations, Threshold moving, and evaluation metrics for IF-FCM's predictive power**
-  1. *Constructed_FCM_Simulations_for_Napoles_error_function.m*
-* **Global and Local Interpretability for IF-FCM**
-  1. *Global_Interpretability.m*
-  2. *Local_Interprtability.m*
+  2. *multi_causal_lyap_est.m*
+  3. *multi_causality_est.m*
+  4. *multi_causality_est_all_new.m*
+  5. *multi_tau_est.m*
 
-IV. COMPARATIVE ANALYSIS AGAINST OTHER ML AND FCM-BASED MODELS
+IV. [COMPARATIVE ANALYSIS AGAINST FCM-BASED AND ML MODELS](https://github.com/marios-tyrovolas/Information-Flow-Based-Fuzzy-Cognitive-Maps-with-Enhanced-Interpretability/tree/main/experimental_setup)
   
-   * Machine Learning Models
+   * [Machine Learning Models (ML)](https://github.com/marios-tyrovolas/Information-Flow-Based-Fuzzy-Cognitive-Maps-with-Enhanced-Interpretability/tree/main/experimental_setup/ML)
      1. *Training and Evaluating other ML models_AI4I_2020_Final_version.ipynb*
      2. *Global_Feat_Import_ML_mdl*
-  * FCM-based Models      
-    * [FCMB and FCMMC](https://github.com/pszwed-ai/fcm_classifier_transformer)
+  * FCM-based Models
+    * [IFFCM](https://github.com/marios-tyrovolas/Information-Flow-Based-Fuzzy-Cognitive-Maps-with-Enhanced-Interpretability/tree/main/experimental_setup/IFFCM)
+      1. IF-FCM Learning Algorithm
+      3. Predictive Power Evaluation
+      4. Explatory Power Evaluation
+    * [FCMB and FCMMC](https://github.com/marios-tyrovolas/Information-Flow-Based-Fuzzy-Cognitive-Maps-with-Enhanced-Interpretability/tree/main/experimental_setup/FCMB_FCMMC)
       1. *Classification and feature transformation with Fuzzy Cognitive Maps - Piotr Szwed.ipynb*
       2. *Hyper-parameter Tuning in FCMB and FCMMC.ipynb*
-    * [LTCN](https://github.com/gnapoles/ltcn-classifier)
+    * [LTCN](https://github.com/marios-tyrovolas/Information-Flow-Based-Fuzzy-Cognitive-Maps-with-Enhanced-Interpretability/tree/main/experimental_setup/LTCN)
       1. *Long-Term Cognitive Network for Pattern Classification.ipynb*
-    * [FCN-FW](https://www.sciencedirect.com/science/article/pii/S1568494621003380)
-      1. *blah_blah.m*
-    * [FCM-SSF](https://sites.google.com/view/fcm-expert?pli=1)
+    * [FCM-FC](https://github.com/marios-tyrovolas/Information-Flow-Based-Fuzzy-Cognitive-Maps-with-Enhanced-Interpretability/tree/main/experimental_setup/FCM_FC)
+      1. *Local_Interpretabiity_FCM_FC.m*
+      2. *Particle_Swarm_Optimization_FCM_FC.m*
+      3. *fcm_fc_training_cost_function.m*
+    * [CCFCM](https://github.com/marios-tyrovolas/Information-Flow-Based-Fuzzy-Cognitive-Maps-with-Enhanced-Interpretability/tree/main/experimental_setup/CCFCM)
+      1. *Correlation_coefficients_ai4i2020.m*
+      2. *Local_Interpretability_Corr_Coef_FCM.m*
+    * [FCM-SSF](https://github.com/marios-tyrovolas/Information-Flow-Based-Fuzzy-Cognitive-Maps-with-Enhanced-Interpretability/tree/main/experimental_setup/FCM_Expert_approach)
       1. *FCM_Expert_approach*
-    * [FCM-A](https://www.sciencedirect.com/science/article/pii/S0925231216315703)
+    * [FCM-A](https://github.com/marios-tyrovolas/Information-Flow-Based-Fuzzy-Cognitive-Maps-with-Enhanced-Interpretability/tree/main/experimental_setup/Froelich_approach)
       1. *Froelich_approach*
-
-
-PS: A second possible solution for FCM training was also examined during this research. Specifically, the normalized IFs were used as the FCM weights but were subject to tuning according to their confidence intervals. For the completeness of the scripts, this code is also listed.
-1. *Particle_Swarm_Optimization_Option_2.m*
-2. *confidence_intervals_taus.mat*
 
 ## Citation
 
