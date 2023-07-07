@@ -14,6 +14,10 @@
 This repository contains the source code developed and used in the paper: *"Information Flow-Based Fuzzy Cognitive Maps with Enhanced Interpretability"* written by **Marios Tyrovolas**, **X. San Liang**, and **Chrysostomos Stylios**. 
 ***
 
+<p align="center">
+<img src="Assets/System_Architecture/System_Architecture.png" alt="System Architecture" width="600">
+</p>
+
 ### Abstract
 ***
 Fuzzy Cognitive Maps (FCM) is a graph-based methodology successfully applied for knowledge representation of complex systems modelled through an interactive structure of nodes connected with causal relationships. Due to their flexibility and inherent interpretability, FCMs have been used in various modelling and prediction tasks to support human decisions. However, one of the main limitations of FCMs is that they may unintentionally absorb spurious correlations from the collected data, resulting in poor prediction accuracy and interpretability. This article proposes a novel framework for constructing FCMs based on Liang-Kleeman Information Flow (L-K IF) analysis to address this limitation. The novelty of the proposed approach is the identification of actual causal relationships from the data using an automatic causal search algorithm.  The actual causal relationships are then imposed as constraints in the FCM learning procedure to rule out spurious correlations and improve the predictive and explanatory power of the model. Numerical simulations were conducted to demonstrate the effectiveness of the proposed approach by comparing it with state-of-the-art FCM-based models. The code for this study is available in this repository.
