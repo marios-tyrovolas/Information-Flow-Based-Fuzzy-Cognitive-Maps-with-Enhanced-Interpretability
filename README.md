@@ -15,7 +15,7 @@ This repository contains the source code developed and used in the paper: *"Info
 ***
 
 <p align="center">
-<img src="main/proposed_methodology_block%20diagram.drawio%20(1).png" alt="Proposed Methodology" width="600">
+<img src="proposed_methodology_block%20diagram.drawio%20(1).png" alt="Proposed Methodology" width="600">
 </p>
 
 ### Abstract
