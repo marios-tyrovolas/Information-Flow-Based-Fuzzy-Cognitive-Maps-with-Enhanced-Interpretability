@@ -24,7 +24,8 @@ Fuzzy Cognitive Maps (FCM) is a graph-based methodology successfully applied for
 We adopted Matzka’s PMAI4I dataset to perform the experiments, a synthetic yet realistic dataset representing industrial predictive maintenance data.
 
 [S. Matzka, “Explainable artificial intelligence for predictive maintenance applications,” in *2020 Third International Conference on Artificial Intelligence for Industries (AI4I).* IEEE, Sep. 2020](https://ieeexplore.ieee.org/document/9253083)
- 
+
+The provided [link](https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset) contains the original repository of the dataset. To access the dataset, including the folds resulting from the stratified k-fold cross-validation, please navigate to the [*"dataset"*](https://github.com/marios-tyrovolas/A-Novel-Framework-for-Enhanced-Interpretability-in-Fuzzy-Cognitive-Maps/tree/main/dataset) folder.
 
 ## Scripts
 
@@ -32,13 +33,13 @@ A list of scripts used within the paper:
 
 II. THEORETICAL BACKGROUND
 
-* **Experiment for L-K IF Analysis on Binary Time Series**: 
-  1. [*LK_IF_anal_binary_data_expr*](https://github.com/marios-tyrovolas/A-Novel-Framework-for-Enhanced-Interpretability-in-Fuzzy-Cognitive-Maps/tree/main/LK_IF_anal_binary_data_expr)
+* [**Experiment for L-K IF Analysis on Binary Time Series**]((https://github.com/marios-tyrovolas/A-Novel-Framework-for-Enhanced-Interpretability-in-Fuzzy-Cognitive-Maps/tree/main/LK_IF_anal_binary_data_expr)): 
+  1. *LK_IF_anal_binary_data_expr*
 
 III. PROPOSED METHODOLOGY
 
 * **Data pre-processing**: 
-  1. *Fuzzy Cognitive Maps in Classification AI4I Dataset.ipynb*
+  1. *AI4I2020_data_preprocessing.ipynb*
   2. *k-fold cross validation datasets*
   3. *GL_scale_normalization* 
 * **Training Phase 1 (L-K IF Analysis)**:
