@@ -75,3 +75,14 @@ PS: A second possible solution for FCM training was also examined during this re
 ## Reference
 
 Tyrovolas, M., San Liang, X., & Stylios, C. (2023). A Novel Framework for Enhanced Interpretability in Fuzzy Cognitive Maps.
+
+### Contact
+
+For any question, please raise an issue or contact
+
+```
+Zhenzhi Wang: zhenzhiwang@outlook.com
+```
+### Acknowledgement
+
+We appreciate [MS-TCN](https://github.com/yabufarha/ms-tcn) for extracted I3D feature, backbone network and evaluation code. 
