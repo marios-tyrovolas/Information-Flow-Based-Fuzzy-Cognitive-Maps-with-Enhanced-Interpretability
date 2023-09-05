@@ -1,9 +1,17 @@
 cff-version: 1.0.0
 message: "If you use this software, please cite it as below."
 authors:
-  - family-names: Tyrovolas, Liang, Stylios
-    given-names: Marios, X. San, Chrysostomos
-    orcid: https://orcid.org/0000-0002-4903-3204
-title: Information Flow-Based Fuzzy Cognitive Maps with Enhanced Interpretability - Source Code
+- family-names: "Tyrovolas"
+  given-names: "Marios"
+  orcid: "https://orcid.org/0000-0002-4903-3204"
+- family-names: "Liang"
+  given-names: "X. San"
+  orcid: "https://orcid.org/0000-0001-8472-3211"
+- family-names: "Stylios"
+  given-names: "Chrysostomos"
+  orcid: "https://orcid.org/0000-0002-2888-6515"
+title: "Information Flow-Based Fuzzy Cognitive Maps with Enhanced Interpretability - Source Code"
 version: v1.0.0
+doi: 10.5281/zenodo.8124066
 date-released: 2023-07-07
+url: "https://github.com/marios-tyrovolas/Information-Flow-Based-Fuzzy-Cognitive-Maps-with-Enhanced-Interpretability"
