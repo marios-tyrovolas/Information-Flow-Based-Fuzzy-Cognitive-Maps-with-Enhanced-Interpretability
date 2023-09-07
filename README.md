@@ -84,14 +84,15 @@ IV. [COMPARATIVE ANALYSIS AGAINST FCM-BASED AND ML MODELS](https://github.com/ma
 If you find our code useful, please cite our paper. 
 
 ```
-@article{Tyrovolas2023,
-author = "Marios Tyrovolas and X. San Liang and Chrysostomos Stylios",
-title = "{A Novel Framework for Enhanced Interpretability in Fuzzy Cognitive Maps}",
-year = "2023",
-month = "5",
-url = "https://www.techrxiv.org/articles/preprint/A_Novel_Framework_for_Enhanced_Interpretability_in_Fuzzy_Cognitive_Maps/22718032",
-note = {TechRxiv techrxiv.22718032},
-doi = "10.36227/techrxiv.22718032.v1"
+@article{tyrovolas_information_2023,
+	title = {Information flow-based fuzzy cognitive maps with enhanced interpretability},
+	issn = {2364-4974},
+	url = {https://doi.org/10.1007/s41066-023-00417-7},
+	doi = {10.1007/s41066-023-00417-7},
+	journal = {Granular Computing},
+	author = {Tyrovolas, Marios and Liang, X. San and Stylios, Chrysostomos},
+	month = sep,
+	year = {2023},
 }
 ```
 
